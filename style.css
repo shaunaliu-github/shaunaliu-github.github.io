@@ -18,15 +18,18 @@ body {
 /* Header Styling */
 h1 {
     font-size: 2.5rem;
-    color: #007bff;
+    color: #1e80e9;
     text-align: center;
     margin-bottom: 10px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 10px;
 }
 
 h2 {
     font-size: 2rem;
     color: #0056b3;
-    margin: 20px 0 10px;
+    margin: 30px 0 10px;
 }
 
 h3 {
@@ -35,10 +38,17 @@ h3 {
     margin: 15px 0 10px;
 }
 
+h5 {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 15px 0 10px;
+    text-align:center;
+}
+
 /* Links */
 a {
-    color: #007bff;
-    text-decoration: none;
+    color: #0157b3;
+    text-decoration: underline;
 }
 
 a:hover {
@@ -53,6 +63,7 @@ p {
 /* Lists */
 ul {
     margin: 10px 0 20px 20px;
+    list-style-type: disc;
     padding-left: 20px;
 }
 
@@ -63,16 +74,60 @@ li {
 
 /* Highlight important elements */
 strong {
-    color: #0056b3;
+
     font-weight: bold;
 }
 
-/* Container */
+/* Container for sidenav and main */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 20px;
+    display: flex;
+    width: 100%;
+    min-height: 100vh; /* Ensure it takes the full viewport height*/
+    box-sizing: border-box; /*Include padding in width calculations*/
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background-color:rgb(197, 197, 232);
+    overflow-x: hidden;
+    padding-top: 60px;
+    box-sizing: border-box;
+
+  }
+ul.navbar {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    width: 100%;
+    text-align: center;   /*whyyyy */
+    overflow-x: hidden;
+  }
+  
+  li a.navbar {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+
+  }
+  
+  /* Change the link color on hover */
+  li a:hover.navbar {
+    background-color: #555;
+    color: white;
+  }
+
+
+
+/* Main Content */
+.main {
+    margin-left: 20%; /* Match the width of the sidebar */
+    box-sizing: border-box;
+
+    padding: 60px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -83,4 +138,68 @@ footer {
     margin-top: 20px;
     font-size: 0.9rem;
     color: #666;
+}
+
+
+
+
+
+/*Display image on hover -- test*/
+
+/* .hide {
+    display: none;
+  }
+.img-hover:hover + .hide {
+    display: block;
+    /* color: red; */
+
+  /* The HTML would be;
+  <li>Valedictorian of Marymount class of 2023. Recipient of the Governor General's Medal and the Cultural Heritage Foundation scholarship.</li>
+  <li class="hide"><img src="assets/valedictorian-award.png"><img src="assets/governor-general-medal.png"></li> */
+
+
+
+
+/* Academic Achievement's Photo Gallery */
+
+.gallery-container {
+    /* Optional: Define a max width for the container */
+    max-width: 960px;
+    margin: 0 auto; /* Center the container */
+    padding: 10px;
+    /* Apply clearfix to handle floated children */
+    overflow: hidden; /* Simple clearfix method */
+}
+
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+.go-back-container{
+    text-align:center;
+}
+
+.go-back{
+    margin:auto;
+    background-color: #41a4e6;
+    font-size: 18px;
+}
+
+.go-back:hover{
+    margin:auto;
+    background-color: #41a4e6;
+    font-size: 20px;
 }
