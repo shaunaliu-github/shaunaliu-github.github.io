@@ -8,73 +8,114 @@
 
 </head>
 
+<div class="container">
 
+        <div class="sidenav">
+    
+            <img src="assets/picture-of-me.jpg" class="picture-of-me">
+            <br>
+            <h1 class="name">Shupeng</h1>
+            <h1 class="name"> Liu</h1>
+            <br>
+            <h4 class="navbar-text">Email:</h4>
+            <h4 class="navbar-text"><a href="mailto:shaunaliu429@gmail.com">shaunaliu429@gmail.com</a></h4>
+            <br>
+            <h4 class="navbar-text">Navigate to:</h4>
+        <ul class="navbar">
+            <li class="index-pg"><a href="index.html" >Resume</a></li>
+            <li class="awards-pg"><a href="award-gallery.html" >Award Gallery</a></li>
+            <li class="writings-pg"><a href="creative-writings.html">Writing</a></li>
+        </ul>
+    
+        </div>
 
-<div class="gallery-container">
-    <h4>Marymount Academy</h4>
-    <div class="gallery">
-        <section id="mary1">
-            <img src="assets/valedictorian-award.png">
-        </section>
+<div class="main">
+    <h1>Awards Gallery</h1>
+    <h5>Click to enlarge pictures.</h5>
+    <div class="gallery-container">
+        <h4>Marymount Academy</h4>
+        <div class="gallery">
+            <section id="mary1">
+                <img src="assets/valedictorian-award.png" class="clickable-img">
+            </section>
+        </div>
+    
+        <div class="gallery">
+            <section id="mary2">
+                <img src="assets/governor-general-medal.png" class="clickable-img">
+                <img src="assets/heritage-foundation-scholarship.png" class="clickable-img">
+            </section>
+        </div>
+    
+        <div class="gallery">
+            <section id="mary3">
+                <img src="assets/marc-garneau-science-distinction.png" class="clickable-img">
+            </section>
+        </div>
+    
+        <div class="gallery">
+            <section id="mary4">
+                <img src="assets/ib-learning-profile-award.png" class="clickable-img">
+            </section>
+        </div>
+    
+        <div class="gallery">
+            <section id="mary5">
+                <img src="assets/wave-interference.png" class="clickable-img">
+            </section>
+        </div>
+    </div>
+    
+    <div class="go-back-container">
+        <button class="go-back" onclick="window.location.href='index.html#academic_achievements'">click here to go back to resume</button>
+    </div>
+    
+    
+    <div class="gallery-container">
+        <h4>Marianopolis College</h4>
+        <div class="gallery">
+            <section id="mapo1">
+                <img src="assets/lynx-award.jpg" class="clickable-img">
+            </section>
+        </div>
+    
+        <div class="gallery">
+            <section id="mapo2">
+                <img src="assets/comc.jpg" class="clickable-img">
+            </section>
+        </div>
+    
+        <div class="gallery">
+            <section id="mapo2">
+                <img src="assets/csmc.jpg" class="clickable-img">
+            </section>
+        </div>
+    
+        <div class="gallery">
+                <img src="assets/Euclid.jpg" class="clickable-img">
+        </div>
+    
+    </div>
+    
+    <div class="go-back-container">
+        <button class="go-back" onclick="window.location.href='index.html#academic_achievements'">click here to go back to resume</button>
     </div>
 
-    <div class="gallery">
-        <section id="mary2">
-            <img src="assets/governor-general-medal.png">
-            <img src="assets/heritage-foundation-scholarship.png">
-        </section>
-    </div>
-
-    <div class="gallery">
-        <section id="mary3">
-            <img src="assets/marc-garneau-science-distinction.png">
-        </section>
-    </div>
-
-    <div class="gallery">
-        <section id="mary4">
-            <img src="assets/ib-learning-profile-award.png">
-        </section>
-    </div>
-
-    <div class="gallery">
-        <section id="mary5">
-            <img src="assets/wave-interference.png">
-        </section>
-    </div>
 </div>
 
-<div class="go-back-container">
-    <button class="go-back" onclick="window.location.href='index.html#academic_achievements'">click here to go back to resume</button>
-</div>
-
-
-<div class="gallery-container">
-    <h4>Marianopolis College</h4>
-    <div class="gallery">
-        <section id="mapo1">
-            <img src="assets/lynx-award.jpg">
-        </section>
-    </div>
-
-    <div class="gallery">
-        <section id="mapo2">
-            <img src="assets/comc.jpg">
-        </section>
-    </div>
-
-    <div class="gallery">
-        <section id="mapo2">
-            <img src="assets/csmc.jpg">
-        </section>
-    </div>
-
-    <div class="gallery">
-            <img src="assets/Euclid.jpg">
-    </div>
 
 </div>
 
-<div class="go-back-container">
-    <button class="go-back" onclick="window.location.href='index.html#academic_achievements'">click here to go back to resume</button>
-</div>
+</html>
+<script>
+    // Select all images with the class "expandable-img"
+    document.querySelectorAll('.expandable-img').forEach(image => {
+        // Add a click event listener to each image
+        image.addEventListener('click', function() {
+            // Toggle the "expanded" class on the clicked image
+            image.classList.toggle('expanded');
+        });
+    });
+</script>
+
+<!-- thank you chatgpt! DOESNT WORK YET THO SADLY-->

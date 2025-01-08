@@ -7,7 +7,7 @@ body, h1, h2, h3, p, ul, li, a {
 
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #f8f9fa;
     color: #333;
     line-height: 1.6;
@@ -18,24 +18,32 @@ body {
 /* Header Styling */
 h1 {
     font-size: 2.5rem;
-    color: #1e80e9;
+    color: #0056b3;
     text-align: center;
     margin-bottom: 10px;
     line-height: 1.6;
     margin: 0;
     padding: 10px;
+    text-shadow: 2px 2px #b9b9b9;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #0056b3;
-    margin: 30px 0 10px;
+    margin: 30px 0 5px;
 }
 
 h3 {
     font-size: 1.5rem;
     color: #333;
     margin: 15px 0 10px;
+}
+
+h4.navbar-text{
+    font-size: 0.9rem;
+    color: #f5efebca;
+    text-align:center;
+    margin:10px 0px 0px 0px;
 }
 
 h5 {
@@ -83,7 +91,7 @@ strong {
     display: flex;
     width: 100%;
     min-height: 100vh; /* Ensure it takes the full viewport height*/
-    box-sizing: border-box; /*Include padding in width calculations*/
+    /* box-sizing: border-box; Include padding in width calculations */
 }
 
 
@@ -91,44 +99,87 @@ strong {
 .sidenav {
     position: fixed;
     width: 20%;
-    height: 100%;
-    background-color:rgb(197, 197, 232);
+    height: 87.5%;
+    background-color:#6587a1;
     overflow-x: hidden;
     padding-top: 60px;
-    box-sizing: border-box;
-
+    margin:auto;
+    /* box-sizing: border-box; */
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
+
+img.picture-of-me{
+    border-radius: 50%;
+    width:45%;
+    display: block;      /* Makes the image a block-level element */
+    margin: 0 auto;      /* Automatically adjusts left and right margins */
+
+    
+}
+
+h1.name{
+    color:#f5efeb;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0px ;
+    padding: 0px ;  
+    /* umm what's up w this?nvm */
+}
+
 ul.navbar {
     list-style-type: none;
     margin:0;
     padding: 0;
     width: 100%;
-    text-align: center;   /*whyyyy */
+    text-align: center;   
     overflow-x: hidden;
   }
   
-  li a.navbar {
+  li.index-pg {
     display: block;
     padding: 8px 16px;
+    margin:8px 20px 8px 20px;
     text-decoration: none;
+    background-color: #c8d9e6 ;
+    border-radius: 5px;
+
+  }
+
+  li.awards-pg {
+    display: block;
+    padding: 8px 16px;
+    margin:8px 20px 8px 20px;
+    text-decoration: none;
+    background-color: #c8d9e6 ;
+    border-radius: 5px;
+
+  }
+
+  li.writings-pg {
+    display: block;
+    padding: 8px 16px;
+    margin:8px 20px 8px 20px;
+    text-decoration: none;
+    background-color: #c8d9e6 ;
+    border-radius: 5px;
 
   }
   
   /* Change the link color on hover */
-  li a:hover.navbar {
-    background-color: #555;
-    color: white;
+  ul.navbar > li > a{
+    text-decoration: none;
+    color: #2f4156;
   }
 
 
 
 /* Main Content */
 .main {
-    margin-left: 20%; /* Match the width of the sidebar */
-    box-sizing: border-box;
+    margin-left: 21%; /* Match the width of the sidebar */
+    /* box-sizing: border-box; */
 
     padding: 60px;
-    border-radius: 8px;
+    border-top-right-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -173,20 +224,41 @@ footer {
 
 
   div.gallery {
-    margin: 5px;
+    margin: 3px;
     border: 1px solid #ccc;
     float: left;
     width: 180px;
   }
   
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
+
   
   div.gallery img {
     width: 100%;
     height: auto;
   }
+
+div.gallery>img:click {
+    width: 100%;
+    height: auto;
+  }
+
+
+/* Default style for the image */
+.expandable-img {
+    width: 50%;
+    height: auto;
+    transition: all 0.3s ease-in-out; /* Smooth transition for resizing */
+}
+
+/* Style when the image is expanded */
+.expandable-img.expanded {
+    width: 100%;
+    height: auto;
+    /* You can add more styles like box-shadow, border, etc., for expanded effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
 
 .go-back-container{
     text-align:center;
@@ -194,12 +266,14 @@ footer {
 
 .go-back{
     margin:auto;
-    background-color: #41a4e6;
-    font-size: 18px;
+    background-color: #7fb8e4;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 8px;
 }
 
 .go-back:hover{
     margin:auto;
-    background-color: #41a4e6;
-    font-size: 20px;
+    background-color: #7fb8e4;
+    font-size: 18px;
 }
