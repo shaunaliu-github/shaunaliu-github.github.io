@@ -37,6 +37,7 @@ h3 {
     font-size: 1.5rem;
     color: #333;
     margin: 15px 0 10px;
+    text-align: center;
 }
 
 h4.navbar-text{
@@ -162,6 +163,15 @@ ul.navbar {
     color: #2f4156;
   }
 
+  ul.navbar > li.active {
+    background-color: #a8c5d9 !important;
+  }
+
+  ul.navbar > li.active > a {
+    color: #0a1f2f;
+    font-weight: bold;
+  }
+
 
 
 /* Main Content */
@@ -202,6 +212,25 @@ footer {
     margin-top: 10px;
     text-align: center;
     font-style: italic;
+}
+
+/* Annotated Statement Styling */
+.annotated-statement {
+    color: #3d3d3d;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    margin: 12px 0;
+}
+
+.annotation-text {
+    color: #3d3d3d;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    border: 2px solid #66a3ff;
+    background-color: #eef5ff;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin: 10px 0;
 }
 
 
