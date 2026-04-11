@@ -66,7 +66,7 @@
             which releases gas release slowly compared to exising designs, reducing the noise peak.
         </p>
 
-        <figure class="content-figure">
+        <figure class="content-figure" style="width: 60%; margin: 0 auto;">
             <img src="pics/praxis1/slider_design.png" alt="Description">
             <figcaption>The schematic of the slider can design, 
                 shown with the gasket (outlined in red)
@@ -76,28 +76,31 @@
         </figure>
 
 
-        <h1>What These Projects Taught Me About Complexity and Simplicity</h1>
+        <h1>What This Project Taught Me About Complexity and Simplicity</h1>
         <p>
-            In Praxis I, prototyping changed how we converged on a "silent can" design. 
+            In Praxis I, we had an oversimplified model for how the soda can worked, which led 
+            us to pivot our designs completely. 
             We initially assumed that controlling depressurization would remove most of the opening noise, 
-            so we focused on reducing the gas hiss. However, prototype testing showed that 
-            the dominant sound came from the aluminum tab tearing the can lid, not just from 
-            gas release.
+            so we focused on reducing the gas hiss. We came up with design candidates that attempted to 
+            lengthen the pressure release time to reduce noise peak. 
+            However, when testing our design candidate prototypes, we were unable to reduce the noise. 
+            We then discovered that can opening noise also came from the aluminum tab tearing the can lid, 
+            not just from 
+            gas release. This caused us to widen the scope of our design, and include modifications 
+            to the soda can valid designs. 
         </p>
 
         <p>
-            This was a clear complexity and simplicity lesson. 
-            Our early model was a useful simplification, but it ignored a critical physical mechanism. 
-            The prototype exposed that hidden complexity and forced us to revise our assumptions,
-            requirements, and design priorities using primary evidence rather than intuition.
-        </p>
-
-        <p>
+            The failure of our early design candidates caused by oversimplifying the opportunity in 
+            our analysis.   
+            Our early depressurization model was a useful simplification, based on our assumptions of
+            how a soda can worked, 
+            but it ignored the critical physical mechanism of the tearing metal tab. 
+            Prototyping testing exposed that hidden complexity and forced us to revise our assumptions.
             This connects directly to the Hoover Dam model: 
-            reality is complex, and every engineering model simplifies that complexity.  
-            The goal is not to avoid simplification, but to test it against reality through 
-            implementation. Going forward, I will use prototyping earlier and more often 
-            to check whether my simplified models still capture the mechanisms that matter.
+            reality is complex, and every engineering model necessarily simplifies that complexity.  
+            Since we cannot avoid simplifications, we must test our design against reality through 
+            proxy testing or implementation. 
         </p>
 
         
@@ -105,39 +108,68 @@
 
         <h2>Morph Chart [Diverging]</h2>
         <p>
-            Morph chart, a diverging tool that 
+            Morph chart were helpful to generate designs based on their functions. 
+            In a morph chart, functions of the design are listed as rows, and different 
+            ways to implement the function are added to the rows. 
         </p>    
 
-        <!-- Add picture here [picture] -->
+        <p>
+            When coming up designs for the soda can opening device, morph charts helped us 
+            generate designs in a organized way by breaking down a complex function into 
+            simpler subfunctions.  When we did classical brainstorming, we filled 
+            a page with design candidates, but the ideas were very unorganized, and some contained 
+            overlapping components. Using a Morph Charts helped us recognize the individuals subfunctions 
+            a design is supposed to accomplish and reduce overlap among components, which organized 
+            our diverging. 
+        </p>
 
         <p>
             <emph>Connected to complexity/simplicity:</emph> 
-            text text
+            Morph Charts break down complex requirements into subfunctions, and break down complex 
+            design candidates into simpler components. It simplified the diverging process.   
         </p>
 
         <figure class="content-figure">
             <img src="pics/praxis1/morph_chart.png" alt="Description">
-            <figcaption>The schematic of the slider can design, 
-                shown with the gasket (outlined in red)
-                under the slider. The gasket acts to ensure an
-                airtight seal, reducing CO2 loss and liquid loss.
+            <figcaption>
+                Morph chart for coming up with soda can opener designs. 
             </figcaption>
         </figure>
 
         
         <h2>Proxy Testing [Converging] + Prototyping [Representing]</h2>
-       <p>
-            ...
-            We placed a calibrated phone microphone
+
+        <p>
+            Proxy testing: Using a simpler prototpe/ metric to measure the performance of 
+            a more complicated model. 
+        </p>
+
+        <p>
+            Prototyping: A representation of the final design, used to verify the design's effectiveness, 
+            and present the design to others. 
+        </p>
+        <p>
+            It's often easier to proxy test and prototype specific parts of a design. 
+            To paraphrase from lecture: <b>"Prototype only the unbelievable parts."</b>
+            When testing the soda can opener, the only "unbelievable part" was whether or 
+            not the design could effectively reduce the noise caused by opening the soda 
+            can. To do this, we made rough protypes whose functions was only to open the can; 
+            we did not worry about food safety or grip area while making these prototypes, even 
+            though they were also requirements. The prototypes were just functional enough for us to 
+            proxy test: we placed a calibrated phone microphone
             at 1 m (with 30 samples per second to align
             timestamps) and extracted peak amplitude
-            relative to ambient baseline.
+            relative to ambient baseline. This helped us evaluated the noise reduction effect 
+            of our design candidates.
 
         </p> 
 
         <p>
             <emph>Connected to complexity/simplicity:</emph> 
-            text text
+            "Prototyping / Testing only the unbelievable parts" helped break down verification into simpler steps. 
+            Verification can be complex, since there are often many requirements and evaluation criteria; 
+            however, not every prototype / proxy test needs to address all the requirements and evaluation 
+            criteria all at once. We can use simple prototypes / proxy tests to build up to a complex claim. 
         </p>
 
         <figure class="content-figure">
@@ -159,25 +191,47 @@
 
 
 
-        <h2>Pugh Chart[Converging/Representing]</h2>
+        <h2>Pugh Chart [Converging/Representing]</h2>
         <p>
-            text text
+            Pugh chart: A converging tool used to evaluate designs against verification metrics. 
         </p> 
+
+        <p>
+            Pugh charts can help eliminate unreasonable designs quickly; however, it may be 
+            too simplified for later-stage converging. Our team used Pugh charts to bring down 
+            our pools of around 20 design candidates down to 4. We did this by ruling out designs 
+            that did not satisfy most of the requirements, or were impossible to prototype. 
+            However, when comparing the 4 remaining designs, we found measurement matrices more useful. 
+            Since we had protypes for each one of them, putting values in a measurement matrix gave us 
+            a sense of how good a design performs with respect to a specific metric, which gave us a 
+            more holistic way to evaluating a designs. Pugh charts can help us know at a glance how a design performs 
+            with a metric compared to the reference, but the "+" or "-" is not graduted. 
+            As a result, I found the measurement matrix to be more useful in our project. 
+        </p>
 
 
         <p>
             <emph>Connected to complexity/simplicity:</emph> 
-            maybe: pugh chart simplifies a bit too much, ultimate decision still belongs to the engineer? 
-            Don't sum Pugh Charts. We humans are holistic. Don't be dictated by numbers. 
-            
+            Pugh charts create a clear representation of the "pros and cons" of each design, 
+            but it may be too simplified for later-stage converging. To quote from lecture: "
+            Don't sum a Pugh Chart" -- this is because the "+" and "-" can be an oversimplification
+            of how a design performs on a metric. The ultimate decisions, when converging, still belongs 
+            to the engineer, who is capable of holistically assessing designs and not overly relying on 
+            numbers. 
         </p>
 
         <figure class="content-figure">
             <img src="pics/praxis1/pugh_chart.png" alt="Description">
-            <figcaption>Pugh chart that helped us pick our final design.
+            <figcaption>Pugh chart for our 4 final designs.
             </figcaption>
         </figure>
-        
+
+        <figure class="content-figure">
+            <img src="pics/praxis1/measurement_matrix.png" alt="Description">
+            <figcaption>Measurement matrix that helped us pick our final design.
+            </figcaption>
+        </figure>
+               
 
 
     </div>
