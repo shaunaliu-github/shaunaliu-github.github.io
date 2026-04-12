@@ -33,28 +33,28 @@
         <h2>The Trumphant Trapezoid</h2>
         <h4>The Opportunity</h4>
         <p>
-            The opportunity is to design a matboard bridge that allows for a toy train to go accross. <br><br>
-            Requirements include: the bridge must bridge the gap between two supports, and be able a certain height. <br>
+            The opportunity is to design a matboard bridge that allows for a toy train to go across. <br><br>
+            Requirements include: the bridge must bridge the gap between two supports, and be over a certain height. <br>
             As well, the bridge can only be constructed from limited matboard and glue, so we need to make good use
             of our limited material. Matboard is essentially paper, so its strength is limited as well. <br>
-            Evluation criteria include: the maximum train weight the bridge can hold before it fails, 
+            Evaluation criteria include: the maximum train weight the bridge can hold before it fails, 
             and the self-weight of the bridge. <br><br>
             Using CIV102 course knowledge and code, we would need to come up with a design that fulfills the requirements, 
-            and optimizes for evluation criteria.
+            and optimizes the evaluation criteria.
         </p>
 
 
 
-        <h4>CIV102 Terminologies</h4>
+        <h4>CIV102 Terminology</h4>
         <p>
             Directional terms refer to the bridge placed left to right, in the direction of train travel.
         </p>
         <ol>
             <li>Deck: the top horizontal surface of the bridge.</li>
             <li>Cross section: the side-view of the bridge; key for structural design.</li>
-            <li>Diaphragm / Stiffners: internal plates that increase stiffness and reduce buckling.</li>
+            <li>Diaphragm / Stiffeners: internal plates that increase stiffness and reduce buckling.</li>
             <li>Centroidal axis: the "center of mass" of the cross section; needs to be optimized to the right height.</li>
-            <li>Flexural compression and Shear: the two types of failure-related actions that we consider in our analysis.</li>
+            <li>Flexural Compression and Shear: the two types of failure-related actions that we consider in our analysis.</li>
             <li>Splice Connection: the matboard is not long enough to cover the whole span, so we need to connect
                 the two separate pieces of the bridge together. This connection is what we call the splice connection.
             </li>
@@ -108,10 +108,10 @@
         <p>
             The bridge project helped me gain a deeper understanding of the Hoover Dam
             model: real life is complex, so any 
-            design we do must simplify real life. This realization came 
+            design we create must simplify real life. This realization came 
             from the fact that our bridge was predicted to hold 868 Newtons,
             but in reality, our splice connection gave out at around 250 Newtons. 
-            In our words, our analysis simplfied the splice connection, but this 
+            In other words, our analysis simplified the splice connection, but this 
             simplification caused the implementation to fail. To connect to the Hoover Dam 
             model: the implementation (building, prototyping) is what connects theory 
             (mathematical models) and real life designs. 
@@ -125,6 +125,8 @@
             were wrong, but because the designer failed to account for the self-weight of 
             the bridge. We can correct our 
             simplifications in three ways:
+
+        </p>
             
             <ul>
                 <li>
@@ -148,7 +150,6 @@
 
             </ul>
 
-        </p>
 
         
         <h1>CTMFs Used</h1>
@@ -156,8 +157,8 @@
         <h2>Iterations in Diverging/Converging [Diverging/Converging]</h2>
 
         <p>
-            Iteration: a "round" of diverging / converging. In this project, it meant 
-            that we came up with some new designs, picked one, and verified its performance. 
+            <b>Iteration</b>: a "round" of diverging / converging. In this project, it meant 
+            that we developed some new designs, picked the best one(s), and verified its performance. 
         </p>
 
         <p>
@@ -185,15 +186,15 @@
             <img src="pics/bridge/iter_diverging.webp" alt="Description">
             <figcaption>Comparison between a Praxis-styled diverging and converging process,
                 and a bridge-styled diverging and converging process. Each dot represents a design 
-                candidate, and each arrow represents a divergin/converging decision. 
+                candidate, and each arrow represents a diverging/converging decision. 
                 Since the framing was 
                 more defined, the bridge design process focused more on depth rather than breadth.
             </figcaption>
         </figure>
 
         <p>
-            <emph>Connected to complexity/simplicity:</emph> 
-            A more complicated design process with more breadth can be more suited for open-ended 
+            <b>Connected to complexity/simplicity:</b> 
+            A broader, more complex design process can be better suited for open-ended 
             opportunities, while a simpler, depth-focused design process can be more suited for 
             more time-constrained, scoped-down opportunities. The complexity and shape of the 
             design process should be appropriate for the framing of the design.
@@ -203,13 +204,13 @@
         <figure class="content-figure">
             <img src="pics/bridge/iterations.png" alt="Description">
             <figcaption>The iterations of our design; each cross section 
-                represents a iteration in diverging and converging. 
+                represents an iteration in diverging and converging. 
             </figcaption>
         </figure>
 
         <h2>Reference Designs [Diverging]</h2>
 
-        <p> Reference design: A design that we find via secondary research, that can provide 
+        <p> <b>Reference Design</b>: A design found through secondary research that can provide 
             useful information for our design opportunity. 
         </p>
         <p>
@@ -232,8 +233,8 @@
 
 
         <p>
-            <emph>Connected to complexity/simplicity:</emph> 
-            Our trapezoidal design was more complex, but this made constrution difficult. 
+            <b>Connected to complexity/simplicity:</b> 
+            Our trapezoidal design was more complex, but this made construction difficult. 
             This shows that reference designs drawn from secondary research require verification and validation 
             against the specific opportunity that we are working on. 
 
@@ -249,25 +250,25 @@
         
         <h2>Analysis (Verification Method) [Converging]</h2>
 
-        <p>Analysis as a verification method: Using mathematical and physical calculations 
-            to evalute how a design would performance with a metric. 
+        <p><b>Analysis</b> as a verification method: Using mathematical and physical calculations 
+            to evaluate how a design would perform against a metric. 
         </p>
        <p>
             Through the disconnect between our theoretical and actual matboard bridge performance,
             I learned that analysis as a verification method is limited. We originally predicted the 
-            bridge to fail at 1143 Newtons, which we lowered to 868 Newtons after account for the 
+            bridge to fail at 1143 Newtons, which we lowered to 868 Newtons after accounting for the 
             limitations of our construction. But even with this adjustment, our analysis failed to 
             account for the splice connection, causing unexpected early failure. For an actual bridge 
-            design, this would be catastrophic: designs that are going to be implemented in reality 
-            should always go through more rigourous prototyping and different modes of proxy testing 
-            to ensure safety. Using rigourous verification is part of the due diligence we would have to do 
+            design, this would be catastrophic: designs intended for real-world implementation  
+            should always go through more rigorous prototyping and different modes of proxy testing 
+            to ensure safety. Using rigorous verification is part of the due diligence we would have to do 
             as professional engineers. 
         
         </p> 
 
 
         <p>
-            <emph>Connected to complexity/simplicity:</emph> 
+            <b>Connected to complexity/simplicity:</b> 
             This case showed the tradeoff between simplicity and complexity in verification. 
             Verification that only included analysis fails to consider a critical failure mode. 
             The large gap between predicted and actual failure load demonstrates why real designs 

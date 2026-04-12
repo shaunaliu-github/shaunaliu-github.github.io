@@ -55,7 +55,7 @@
             <figcaption>
                 Page 2 (on the left) and page 3 (on the right) of our Praxis II showcase 
                 one-pager. <br>
-                These two pages introduce the 4 steps in the diagnostic process of our 
+                These two pages introduce the 4 steps in the diagnostic process of our device. 
             </figcaption>
         </figure>
 
@@ -67,50 +67,47 @@
         <h1>What My Process Taught Me About Complexity and Simplicity</h1>
 
 
-        <h2>Coding and Research </h2>
+        <h5>Coding and Research </h5>
         <p>
             In our Praxis II design, I contributed to the firmware for the Raspberry Pi microcontroller;
             in the process, I learned that complex code is often built up from simple code; complex algorithms
             don't always perform better. I was working on extracting data from the drone's onboard storage, and 
-            there were two methods: either I go through drone storage to find the latest log to analyze, or I erase 
-            the drone storage every time after the diagnostic so only new logs are extracted. I initially tried the 
-            former approach, which didn't work, since I couldn't find the right logs. Continuining with the first 
-            approach, I spent days using agentic AI, trying to debug the code. I ended up with a extremely complicated
-            algorithm, but it still didn't work.  That when I asked about my approach on an online forum, where I found
+            there were two methods: either I search the drone storage for the latest log, or I erase storage 
+            after each diagnostic so only new logs are extracted. I initially tried the 
+            former approach, which didn't work, since I couldn't find the flight logs I needed. Continuing with the first 
+            approach, I spent days using agentic AI, trying to debug the code. I ended up with an extremely complicated
+            algorithm, but it still didn't work. That was when I asked about my approach on an online forum, where I found
             out that the first approach was actually impossible. I coded up the second approach, and it worked right away.
             Through this experience, I realized that a working solution may not necessarily be more complex than my original
-            solution; when solutions become too complex, it may be time to go back to simpler approaches that were brought up
+            solution; when solutions become too complex, it may be time to go back to simpler approaches/designs that were created
             in diverging.
 
         </p>
         
 
         <figure class="content-figure">
-            <img src="pics/praxis2/attempts.png" alt="Attempts at debugging extration" style="width:25%;">
+            <img src="pics/praxis2/attempts.png" alt="Attempts at debugging extraction" style="width:25%;">
             <figcaption>
                 My different attempts at extracting data from drone blackbox. 
             </figcaption>
         </figure>
 
-        <br>
-        
-
-        <h2>Presentation</h2>
+        <h5>Presentation</h5>
 
         <p>
-            Through working on the Beta Release and Showcase poster, I realized that in a simpler representation is 
+            Through working on the Beta Release and Showcase poster, I realized that a simpler representation is 
             sometimes more effective. During the Beta Release, we tried to fill our trifold poster with slides, so 
-            that we could definintely cover all things on the rubric. However, this led our poster to become too 
+            that we could definitely cover all requirements on the rubric. However, this led our poster to become too 
             cluttered -- assessors were unable to read our poster from a distance, and we had to speak very quickly
             to cover all slides on our poster. 
             From this, I realized that even if the work we did was complex, overwhelming our representation of work with
             information is not a good idea. We had to learn to let go, and present only the information that was essential
-            to get our point accross. I had to learn to trust that all the hard work we did will come accross, even if we
-            could only represent "tip of the iceberg" of what we had worked on.   
+            to get our point across. I had to learn to trust that all the hard work we did will come across, even if we
+            could only represent the "tip of the iceberg" of what we had worked on.   
             For our showcase, we kept the advice we had in mind, and decided to 
             focus the poster on a CAD rendering of our design. We did what we could to simplify our poster; however, 
             it was still a bit information-dense compared to other groups' posters. From this, I realized that communicating 
-            concisely is sometime I need to work on. 
+            concisely is something I need to work on. 
         </p>
 
         <figure class="content-figure">
@@ -123,18 +120,23 @@
             <figcaption>Praxis 2 Poster</figcaption>
         </figure>
 
+
+
+
+            <!-- I took the initiative to work out , and 
+            I gained coding e-->
+
         <p>
             As for writing style: through working with teammates, I realized that 
             it's important to use precise technical terms, but
-            complicated terminalogy isn't always equivalent to better communication. It's important
-            to use the right terminologies to be precise and increase one's authority, but using 
-            too many technical terms will obscure meaning. This is what happened when 
-            I wrote reports with teammates -- due to my limited language abilities, I was unable 
-            to fully understand what my teammates wrote, which led me to be unable to edit their 
-            work well, causing me to ignore errors that I could have caught. On the other hand, teammates 
-            have pointed out that I have been too informal and unprecise with my writing.  
+            complicated terminology isn't always equivalent to better communication. It's important
+            to use precise terminology to increase one's authority, but using 
+            too many technical terms will obscure meaning. This happened when 
+            I wrote reports with teammates: due to my limited language ability, I sometimes could not fully understand 
+            their writing; so when editing, I missed errors I could have caught. On the other hand, teammates 
+            have pointed out that I have been too informal and imprecise with my writing.  
             In the future, I will aim to find a good balance between using precise terminologies 
-            (complex lanugage) and clear language (simple language) when writing.
+            (complex language) and clear language (simple language) when writing.
              
         </p>
 
@@ -154,7 +156,7 @@
             In my case, I spent two days trying to debug the extraction method, to no avail. I then made a post on reddit, 
             where the drone piloting community responded with a fix right away. This leads me to tt -->
 
-        </p>
+        <!-- </p> -->
 <!-- 
         <p>
             At the beginning, my position was that engineers needed to embrace complexity.  
@@ -191,41 +193,43 @@
         <h2>Metrics [Framing]</h2>
 
         <p>
-            Metric: a quantitative, measurable standard used to verify a design's performance, 
-            in order for it to fulfill a specific objective (or requirement, or evluation criteria).
+            <b>Metric</b>: a quantitative, measurable standard used to verify a design's performance, 
+            in order for it to fulfill a specific objective (or requirement, or evaluation criteria).
+            Metrics are essential for framing.
         </p>
         <p>
             Previously, I thought metrics always had to be graduated, 
             but now I realized that a simple binary metric can sometimes be 
-            more effective. For context: the RFP our team worked on worked on optimizing project management at a 
+            more effective. For context: the RFP our team worked on focused on optimizing project management at a 
             high school robotics team. Based on secondary research, we adopted agile metrics from online sources, 
             since agile methodologies are often used in industrial project management. 
-            These metrics are graduated, but they related more to validation than verification,
+            These metrics are graduated, but they relate more to validation than verification,
             which led us to use unnecessarily-complicated metrics that did not suit the opportunity. 
             <br>
-            In our design project, we reframed the drone diagnostics RFP using simpler metrics. For example, we used a simple accuracy score to test 
-            our algorithm design, and pass/fail dimension check for portability. 
+            In our design project, we reframed the drone diagnostics RFP using simpler metrics. For example, 
+            we used a simple accuracy percentage to test 
+            our algorithm design, and a pass/fail dimension check for portability. 
             We also reduced unnecessary evaluation criteria. As a result, designing and performing tests for 
             verification became more manageable. 
         </p>    
 
         <p>
             <b>Connection to complexity/simplicity:</b> 
-            From my two constrasting experiences in Praxis II, I learned that graduated, complex
-            metrics is not always a strength: although it might capture more aspects of the opportunity,
-            it may also add effort without improving verification.
+            From my two contrasting experiences in Praxis II, I learned that graduated, complex
+            metrics are not always a strength: although they might capture more aspects of the opportunity,
+            they may also add effort without improving verification.
             Simpler metrics gave us clearer evidence and a more practical testing process.
         </p>
 
         <div style="display: flex; gap: 20px; align-items: flex-start; justify-content: center; flex-wrap: wrap; margin: 20px 0;">
             <figure class="content-figure" style="flex: 1 1 320px; margin: 0;">
                 <img src="pics/praxis2/robotics_goal1.png" style="width: 90%;">
-                <figcaption>Metrics for robotics RFP where overly complicated.</figcaption>
+                <figcaption>Metrics for robotics RFP were overly complicated.</figcaption>
             </figure>
 
             <figure class="content-figure" style="flex: 1 1 320px; margin: 0;">
                 <img src="pics/praxis2/drone_goal1.png" style="width: 90%;">
-                <figcaption>We worked on improving our metrics for drone RFP</figcaption>
+                <figcaption>We worked on improving our metrics for drone RFP.</figcaption>
             </figure>
         </div>
 
@@ -239,15 +243,16 @@
 
         </p>
         <p>
-            We scoped down the drone diagnostics RFP to achieve a more accomplishable design.
+            We scoped down on the original drone diagnostics RFP, 
+            which helped us achieve a more feasible design scope and diverge more easily.
             Originally, the drone RFP's need was: "A reliable, diagnostic system to verify 
             the integrity of the drone's systems, evaluate the flight-readiness
             of its core components, and prevent in-flight failure". When we dug into the research, 
             we realized that there were many drone systems (propulsion system, electrical system, etc.);
             the broad scope would make the design space too unconstrained, making diverging difficult.
             As well, the goals are mapped from the broad design space, so it would be hard to find a design
-            that satisfies all goals. Because of this, we decided to rescope, and only focus on the drone's 
-            propulsion system. Our rescoped need is as such: "A portable system to verify the health and 
+            that satisfies all goals. Because of this, we decided to rescope and focus only on the drone's 
+            propulsion system. Our rescoped need is: "A portable system to verify the health and 
             flight readiness of drone propulsion systems using objective pre-flight diagnostics." 
             Accordingly, we removed unnecessary goals relating to battery health. This narrowed
             scope allowed us to diverge more easily, facilitating our design process.
@@ -280,20 +285,20 @@
 
         <h2>Functional Structural Diagram (FSD) [Representing]</h2>
 
-        <p><b>Functional Structural Diagram: a represenatation of a system / design 
+        <p><b>Functional Structural Diagram</b>: a representation of a system / design 
             by decomposing its overall function into smaller sub-functions. Arrows represent 
             the flow of energy (solid arrow), material (empty arrow), or signal (dotted arrow).
             
-            <a href="ref-5">[5]</a>
-        </b></p>
+            <a href="conclusion.html#ref-5">[5]</a>
+        </p>
         <p>
             Using functional structure diagrams (FSDs) to represent the drone's propulsion 
             system helped us rescope and better diverge. After doing some preliminary research, 
             we were flooded with information about drone fault detection methods, which led to 
             us being confused about which input signals (such as noise or heat) would best represent 
             drone status for our use case. Then, we learned about FSDs in lecture, and we tried drawing 
-            a FSD of the drone's propulsion system during Studio. This really helped us organize the 
-            unstructured research we did in a clear manner. By using a FSD to analyze the drone, we 
+            an FSD of the drone's propulsion system during Studio. This really helped us organize the 
+            unstructured research we did in a clear manner. By using an FSD to analyze the drone, we 
             realized that we could map outputs of the drone propulsion system to various detection methods, 
             which led to many design concepts. Therefore, having a graphical representation of the system 
             inputs and outputs helped us structure our diverging. 
@@ -303,7 +308,7 @@
         <p>
             <b>Connected to complexity/simplicity:</b> Although FSD did simplify the huge amount of initial research that we did, 
             being able to represent our research in a clear, graphical manner helped us with diverging. 
-            This is a case where concise representation initally seemed like a simplification and a constraint on the 
+            This is a case where concise representation initially seemed like a simplification and a constraint on the 
             way we can think about our research, but it actually unlocked our creativity. 
         </p>
 
